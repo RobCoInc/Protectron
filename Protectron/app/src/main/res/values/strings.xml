@@ -62,6 +62,7 @@
     <string name="location_list">List Locations</string>
     <string name="finish_shift_button">Finish Shift</string>
     <string name="shift_end_time_head">Your Shift Ends At:</string>
+    <string name="emergency">Report Emergency</string>
     <string name="title_activity_map">Map</string>
     <string name="view_location_button">View Location</string>
 </resources>

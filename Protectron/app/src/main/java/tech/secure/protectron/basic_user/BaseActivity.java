@@ -46,6 +46,10 @@ public class BaseActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, SearchArrestActivity.class);
                 startActivity(intent);
                 return super.onOptionsItemSelected(item);
+            case R.id.emergency:
+                Intent emergencyIntent = new Intent(this, EmergencyActivity.class);
+                startActivity(emergencyIntent);
+                return super.onOptionsItemSelected(item);
             default:
                 return super.onOptionsItemSelected(item);
         }

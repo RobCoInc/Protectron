@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tech.secure.protectron">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -46,6 +47,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".advanced_user.AdminActivity" />
         <activity android:name=".basic_user.ShiftLocationListActivity" />
+        <activity android:name=".basic_user.EmergencyActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
