@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.secure.protectron.basic_user.ShiftActivity">
+
+    <LinearLayout
+        android:id="@+id/shift_location_details_view"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shift_location_name_view"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Name"/>
+
+        <TextView
+            android:id="@+id/shift_location_city_view"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location City"/>
+
+        <TextView
+            android:id="@+id/shift_location_address_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Address"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shift_details_layout"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shift_date_view"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift Date"/>
+
+        <TextView
+            android:id="@+id/shift_time_view"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift Time"/>
+
+        <TextView
+            android:id="@+id/shift_end_time_view"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift End Time"/>
+
+        <Button
+            android:id="@+id/start_shift_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_shift_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

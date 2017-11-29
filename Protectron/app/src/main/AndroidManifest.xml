@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.secure.protectron">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".basic_user.BaseActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UsersListActivity" />
+        <activity android:name=".basic_user.UserMainActivity" />
+        <activity android:name=".basic_user.NewArrestActivity" />
+        <activity android:name=".basic_user.SearchArrestActivity" />
+        <activity android:name=".basic_user.NewLocationActivity" />
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".LocationListActivity" />
+        <activity android:name=".basic_user.NewShiftActivity" />
+        <activity android:name=".basic_user.MyShiftsActivity" />
+        <activity android:name=".basic_user.ShiftActivity" />
+        <activity android:name=".basic_user.ActiveShiftActivity" />
+        <activity android:name=".basic_user.ApplyForShiftActivity" />
+        <activity android:name=".ArrestActivity" />
+        <activity
+            android:name=".advanced_user.AdminMainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".advanced_user.AdminActivity" />
+        <activity android:name=".basic_user.ShiftLocationListActivity"></activity>
+    </application>
+
+</manifest>

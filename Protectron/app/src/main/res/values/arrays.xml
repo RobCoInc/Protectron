@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hair_color_array">
+        <item>Black</item>
+        <item>Brunette</item>
+        <item>Blond</item>
+        <item>Ginger</item>
+        <item>White/Gray</item>
+        <item>Wig/Dyed</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="eye_color_array">
+        <item>Blue</item>
+        <item>Brown</item>
+        <item>Green</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="skin_color_array">
+        <item>Caucasian</item>
+        <item>Asian</item>
+        <item>African American</item>
+        <item>Middle-Eastern</item>
+        <item>Indian</item>
+        <item>Latin-American</item>
+        <item>Native American</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="has_tatoo_array">
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+</resources>

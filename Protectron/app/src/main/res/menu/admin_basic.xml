@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_new_location"
+        android:title="@string/new_location"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/action_location_list"
+        android:title="@string/location_list"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_user_list"
+        android:title="@string/user_list"
+        app:showAsAction="never"
+        />
+
+</menu>
