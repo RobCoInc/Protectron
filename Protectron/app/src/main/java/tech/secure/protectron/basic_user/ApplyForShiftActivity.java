@@ -21,6 +21,7 @@ public class ApplyForShiftActivity extends AppCompatActivity {
 
     Bundle extras;
     long user_id;
+    long location_id;
 
     DBHelper db;
 
@@ -40,10 +41,11 @@ public class ApplyForShiftActivity extends AppCompatActivity {
 
         extras = getIntent().getExtras();
         user_id = extras.getLong("user_id");
+        location_id = extras.getLong("location_id");
 
         mShiftsListView = (ListView) findViewById(R.id.available_shifts_list_view);
 
-        cursor = db.readAvailableShifts();
+        cursor = db.readAvailableShifts(location_id);
         cAdapter = new SimpleCursorAdapter(this, R.layout.support_simple_spinner_dropdown_item, cursor, new String[]{"shift_date", "shift_start_time"}, new int[]{android.R.id.text1, android.R.id.text2}, FLAG_REGISTER_CONTENT_OBSERVER);
 
         mShiftsListView.setAdapter(cAdapter);
@@ -61,7 +63,7 @@ public class ApplyForShiftActivity extends AppCompatActivity {
 
     void updateList()
     {
-        cursor = db.readAvailableShifts();
+        cursor = db.readAvailableShifts(location_id);
         cAdapter = new SimpleCursorAdapter(this, R.layout.support_simple_spinner_dropdown_item, cursor, new String[]{"shift_date", "shift_start_time"}, new int[]{android.R.id.text1, android.R.id.text2}, FLAG_REGISTER_CONTENT_OBSERVER);
 
         mShiftsListView.setAdapter(cAdapter);

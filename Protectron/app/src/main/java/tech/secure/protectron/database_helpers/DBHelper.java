@@ -211,7 +211,7 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase rdb = this.getReadableDatabase();
         Cursor c;
 
-        c = rdb.rawQuery("SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_ID + " = '" + 0 + "'", null);
+        c = rdb.rawQuery("SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_USER_ID + " ='" + 0 + "'", null);
 
         if(!c.moveToFirst())
         {
@@ -249,10 +249,10 @@ public class DBHelper extends SQLiteOpenHelper {
         return db.rawQuery("SELECT * FROM " + TABLE_LOCATION + "", null);
     }
 
-    public Cursor readAvailableShifts()
+    public Cursor readAvailableShifts(long id)
     {
         SQLiteDatabase db = this.getReadableDatabase();
-        return db.rawQuery("SELECT * FROM " + TABLE_SHIFTS + " WHERE " + COLUMN_SHIFT_AVAILABLITY + "='YES'", null);
+        return db.rawQuery("SELECT * FROM " + TABLE_SHIFTS + " WHERE " + COLUMN_SHIFT_AVAILABLITY + "='YES' AND " + COLUMN_LOCATION_ID_FK + "='" + id + "'", null);
     }
 
     public ArrayList<String> getAllLocations() {

@@ -16,7 +16,7 @@ import tech.secure.protectron.database_helpers.DBHelper;
 
 import static android.widget.CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER;
 
-public class LocationListActivity extends BaseActivity {
+public class LocationListActivity extends AppCompatActivity {
 
     DBHelper db;
 
