@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
+import tech.secure.protectron.MapActivity;
 import tech.secure.protectron.R;
 import tech.secure.protectron.database_helpers.DBHelper;
 import tech.secure.protectron.objects.Location;
@@ -35,6 +36,7 @@ public class ShiftActivity extends BaseActivity {
     TextView mShiftEndTime;
 
     Button mStartShift;
+    Button mViewLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,7 @@ public class ShiftActivity extends BaseActivity {
         mShiftEndTime = (TextView) findViewById(R.id.shift_end_time_view);
 
         mStartShift = (Button) findViewById(R.id.start_shift_button);
+        mViewLocation = (Button) findViewById(R.id.view_location_button);
 
         mLocationName.setText(location.getName());
         mLocationCity.setText(location.getCity());
@@ -76,6 +79,16 @@ public class ShiftActivity extends BaseActivity {
                 startShift.putExtra("user_id", user_id);
                 startActivity(startShift);
                 finish();
+            }
+        });
+
+        mViewLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mapIntent = new Intent(getBaseContext(), MapActivity.class);
+                mapIntent.putExtra("location_name", location.getName());
+                mapIntent.putExtra("location_address", location.getAddress());
+                startActivity(mapIntent);
             }
         });
     }
