@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tech.secure.protectron">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -38,7 +39,8 @@
             android:name=".advanced_user.AdminMainActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".advanced_user.AdminActivity" />
-        <activity android:name=".basic_user.ShiftLocationListActivity"></activity>
+        <activity android:name=".basic_user.ShiftLocationListActivity" />
+        <activity android:name=".basic_user.EmergencyActivity"></activity>
     </application>
 
 </manifest>

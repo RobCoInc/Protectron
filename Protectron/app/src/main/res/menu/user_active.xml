@@ -7,6 +7,11 @@
         app:showAsAction="never"
         />
     <item
+        android:id="@+id/emergency"
+        android:title="@string/emergency"
+        app:showAsAction="never"
+        />
+    <item
         android:id="@+id/search_arrests"
         android:title="@string/search_arrests"
         app:showAsAction="never"
