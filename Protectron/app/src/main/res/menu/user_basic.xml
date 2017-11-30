@@ -2,18 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/newArrest"
-        android:title="@string/new_arrest"
+        android:id="@+id/searchArrests"
+        android:title="@string/search_arrests"
         app:showAsAction="never"
         />
     <item
         android:id="@+id/emergency"
         android:title="@string/emergency"
-        app:showAsAction="never"
-        />
-    <item
-        android:id="@+id/searchArrests"
-        android:title="@string/search_arrests"
         app:showAsAction="never"
         />
 </menu>

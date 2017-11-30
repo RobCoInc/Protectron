@@ -38,10 +38,6 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.newArrest:
-                Intent iArrest = new Intent(this, NewArrestActivity.class);
-                startActivity(iArrest);
-                return super.onOptionsItemSelected(item);
             case R.id.searchArrests:
                 Intent intent = new Intent(this, SearchArrestActivity.class);
                 startActivity(intent);

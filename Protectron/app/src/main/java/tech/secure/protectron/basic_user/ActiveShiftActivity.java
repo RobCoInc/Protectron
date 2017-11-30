@@ -62,9 +62,9 @@ public class ActiveShiftActivity extends AppCompatActivity {
         mUserName.setText(user.getName());
         mShiftLocationName.setText(location.getName());
 
-        sShiftEndTime = getString(R.string.shift_end_time_head);
+        sShiftEndTime = getString(R.string.shift_end_time_head) + shift.getEndTime() + "";
 
-        mShiftEndTime.setText(sShiftEndTime + shift.getEndTime());
+        mShiftEndTime.setText(sShiftEndTime);
 
         mFinishShiftButton = (Button) findViewById(R.id.finish_shift_button);
         mFinishShiftButton.setOnClickListener(new View.OnClickListener() {
@@ -104,8 +104,8 @@ public class ActiveShiftActivity extends AppCompatActivity {
                 Intent iSearchArrest = new Intent(this, SearchArrestActivity.class);
                 startActivity(iSearchArrest);
                 return super.onOptionsItemSelected(item);
-            case R.id.search_alias:
-                Intent iSearchAlias = new Intent(this, SearchArrestActivity.class);
+            case R.id.emergency:
+                Intent iSearchAlias = new Intent(this, EmergencyActivity.class);
                 startActivity(iSearchAlias);
                 return super.onOptionsItemSelected(item);
             default:

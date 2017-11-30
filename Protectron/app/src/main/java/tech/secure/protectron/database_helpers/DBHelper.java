@@ -528,6 +528,7 @@ public class DBHelper extends SQLiteOpenHelper {
         c.moveToFirst();
         shift.setDate(c.getString(c.getColumnIndex(COLUMN_SHIFT_DATE)));
         shift.setTime(c.getString(c.getColumnIndex(COLUMN_SHIFT_TIME)));
+        shift.setEndTime(c.getString(c.getColumnIndex(COLUMN_SHIFT_END_TIME)));
         shift.setId(c.getLong(c.getColumnIndex(COLUMN_SHIFT_ID)));
         shift.setLocation_id(c.getLong(c.getColumnIndex(COLUMN_LOCATION_ID_FK)));
 

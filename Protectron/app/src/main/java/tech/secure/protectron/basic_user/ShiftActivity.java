@@ -88,6 +88,7 @@ public class ShiftActivity extends BaseActivity {
                 Intent mapIntent = new Intent(getBaseContext(), MapActivity.class);
                 mapIntent.putExtra("location_name", location.getName());
                 mapIntent.putExtra("location_address", location.getAddress());
+                mapIntent.putExtra("location_city", location.getCity());
                 startActivity(mapIntent);
             }
         });

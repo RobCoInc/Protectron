@@ -8,7 +8,6 @@
         app:showAsAction="never"
         />
 
-
     <item
         android:id="@+id/action_location_list"
         android:title="@string/location_list"

@@ -10,6 +10,7 @@ public class Shift
     private String date;
     private String time;
     private String endTime;
+    private long location_id;
 
     public String getEndTime() {
         return endTime;
@@ -18,8 +19,6 @@ public class Shift
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
-
-    private long location_id;
 
     public long getId() {
         return id;
