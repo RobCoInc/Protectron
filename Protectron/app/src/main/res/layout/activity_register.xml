@@ -101,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center"
+            android:textColor="@color/colorWhite"
             android:text="Already a member? Login"
             android:textSize="16dp" />
     </android.support.v7.widget.LinearLayoutCompat>

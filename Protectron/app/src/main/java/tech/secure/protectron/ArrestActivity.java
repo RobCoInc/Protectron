@@ -52,14 +52,14 @@ public class ArrestActivity extends AppCompatActivity {
         mDescriptionEyeColorView = (TextView) findViewById(R.id.description_eye_color_view);
         mDescriptionSkinColorView = (TextView) findViewById(R.id.description_skin_color_view);
 
-        mArrestDateView.setText(arrest.getDate());
-        mArrestTimeView.setText(arrest.getTime());
+        mArrestDateView.setText("Date of the arrest: " + arrest.getDate());
+        mArrestTimeView.setText("Time of the arrest: " + arrest.getTime());
 
-        mDescriptionNameView.setText(description.getName());
-        mDescriptionHeightView.setText(String.valueOf(description.getHeight()));
-        mDescriptionWeightView.setText(String.valueOf(description.getWeight()));
-        mDescriptionHairColorView.setText(description.getHairColor());
-        mDescriptionEyeColorView.setText(description.getEyeColor());
-        mDescriptionSkinColorView.setText(description.getSkinColor());
+        mDescriptionNameView.setText("Name: " + description.getName());
+        mDescriptionHeightView.setText("Height: " + String.valueOf(description.getHeight()) + " cm");
+        mDescriptionWeightView.setText("Weight: " + String.valueOf(description.getWeight()) + " lbs");
+        mDescriptionHairColorView.setText("Hair Color: " + description.getHairColor());
+        mDescriptionEyeColorView.setText("Eye Color: " + description.getEyeColor());
+        mDescriptionSkinColorView.setText("Ethnicity: " + description.getSkinColor());
     }
 }

@@ -19,6 +19,7 @@
             android:id="@+id/location_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:textSize="30dp"
             android:gravity="center"
             android:text="holder"
@@ -28,6 +29,7 @@
             android:id="@+id/location_city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:gravity="center"
             android:text="holder"
             />
@@ -36,6 +38,7 @@
             android:id="@+id/location_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:gravity="center"
             android:text="holder"
             />

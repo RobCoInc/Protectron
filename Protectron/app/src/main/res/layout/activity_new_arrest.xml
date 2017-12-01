@@ -21,12 +21,14 @@
             android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="date holder"/>
 
         <TextView
             android:id="@+id/arrest_time_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
             android:text="time holder"/>
 
     </LinearLayout>
@@ -84,18 +86,21 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
                 android:text="Hair Color:"/>
 
             <TextView
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
                 android:text="Eye Color:"/>
 
             <TextView
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
                 android:text="Skin Color:"/>
 
 
